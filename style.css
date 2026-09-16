@@ -1,38 +1,177 @@
-body{
+*{
 
-margin:0;
-overflow:hidden;
-background:black;
-font-family:monospace;
+box-sizing:border-box;
 
 }
+
+
+
+body{
+
+
+margin:0;
+
+overflow:hidden;
+
+background:#020505;
+
+font-family:
+"Courier New",
+monospace;
+
+color:#00ffff;
+
+
+}
+
 
 
 canvas{
 
 position:absolute;
+
 top:0;
+
 left:0;
 
 }
 
 
-.hud{
+
+.title{
+
 
 position:absolute;
 
-top:30px;
+top:25px;
+
 left:30px;
 
-color:#00ffff;
 
-font-size:18px;
+z-index:10;
+
 
 text-shadow:
+
 0 0 10px cyan;
 
 
-line-height:30px;
+}
+
+
+
+.title h1{
+
+
+font-size:40px;
+
+margin:0;
+
 
 }
 
+
+
+.title p{
+
+
+font-size:16px;
+
+opacity:.8;
+
+
+}
+
+
+
+
+
+.panel{
+
+
+position:absolute;
+
+right:30px;
+
+top:30px;
+
+
+width:280px;
+
+
+padding:20px;
+
+
+background:
+
+rgba(0,255,255,0.08);
+
+
+
+border:
+
+1px solid cyan;
+
+
+
+border-radius:15px;
+
+
+
+box-shadow:
+
+0 0 30px rgba(0,255,255,.5);
+
+
+
+z-index:10;
+
+
+
+}
+
+
+
+.panel h2{
+
+
+margin-top:0;
+
+
+font-size:20px;
+
+
+}
+
+
+
+#info{
+
+
+line-height:28px;
+
+
+}
+
+
+
+.footer{
+
+
+position:absolute;
+
+bottom:20px;
+
+left:50%;
+
+transform:
+translateX(-50%);
+
+
+opacity:.5;
+
+
+font-size:14px;
+
+
+}
